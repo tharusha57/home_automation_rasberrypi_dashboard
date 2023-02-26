@@ -18,8 +18,6 @@ function App() {
   const [light3, setLight3] = useState(false)
   const [fan, setFan] = useState(false)
 
-  // const { data } = useFetchData(`https://api.thingspeak.com/channels/1895186/fields/1.json?api_key=7CMJVS8MO6R7J3AB&results=20`);
-
   const { data } = useFetchData('http://localhost:4000/data')
 
   const fanChange = (e) => {
